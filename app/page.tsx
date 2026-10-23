@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { LanguageSwitch } from "./components/LanguageSwitch";
 import { NotifyForm } from "./components/NotifyForm";
+import { SocialLinks } from "./components/SocialLinks";
 import { getDict } from "./i18n";
 
 const MANAGER_URL = "https://vk.ru/lovelyanastasia";
@@ -76,8 +77,9 @@ export default async function HomePage() {
       </main>
 
       <footer className="site-footer">
+        <SocialLinks label={t.socials} />
         <p className="credit">
-          <span className="credit-role">{t.manager.role}</span>
+          <span className="footer-label">{t.manager.role}</span>
           <a className="credit-link" href={MANAGER_URL} target="_blank" rel="noopener noreferrer">
             <VkIcon />
             <span>{t.manager.name}</span>
