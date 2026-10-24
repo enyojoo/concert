@@ -22,7 +22,6 @@ export type Dict = {
   lineupTitle: string;
   tba: string;
   socials: string;
-  manager: { role: string; name: string };
   notify: {
     title: string;
     copy: string;
@@ -52,7 +51,6 @@ const dictionaries: Record<Locale, Dict> = {
     lineupTitle: "Taking the stage on the night",
     tba: "To be announced",
     socials: "Connect with Enyo Sam",
-    manager: { role: "Artist and Event Manager", name: "Anastasia Lyubimova" },
     notify: {
       title: "Notify me",
       copy: "Leave a way to reach you when the night is set.",
@@ -80,7 +78,6 @@ const dictionaries: Record<Locale, Dict> = {
     lineupTitle: "Выступают в этот вечер",
     tba: "Будет объявлено",
     socials: "На связи с Enyo Sam",
-    manager: { role: "Менеджер артиста и мероприятий", name: "Анастасия Любимова" },
     notify: {
       title: "Сообщите мне",
       copy: "Оставьте контакт, и мы сообщим, когда дата вечера будет назначена.",
