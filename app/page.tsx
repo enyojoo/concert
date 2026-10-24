@@ -21,9 +21,18 @@ export default async function HomePage() {
     <>
       <main id="top">
         <section className="hero">
-          <div className="sheet">
+          <div className="hero-top">
+            <Image
+              src="/images/rescued-show-logo.png"
+              alt="The Rescued Show"
+              width={1456}
+              height={589}
+              priority
+            />
             <p className="kicker">{t.kicker}</p>
+          </div>
 
+          <div className="sheet">
             <div className="lockup">
               <div className="name">
                 <h1>Enyo Sam</h1>
